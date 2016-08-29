@@ -42,7 +42,6 @@ PRODUCT_PACKAGES += \
 
 # Permissions
 PRODUCT_COPY_FILES += \
-    external/ant-wireless/antradio-library/com.dsi.ant.antradio_library.xml:system/etc/permissions/com.dsi.ant.antradio_library.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml \
@@ -130,13 +129,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     gps.msm8974
 
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
-    $(LOCAL_PATH)/gps/flp.conf:system/etc/flp.conf \
-    $(LOCAL_PATH)/gps/izat.conf:system/etc/izat.conf \
-    $(LOCAL_PATH)/gps/quipc.conf:system/etc/quipc.conf \
-    $(LOCAL_PATH)/gps/sap.conf:system/etc/sap.conf \
-    $(LOCAL_PATH)/gps/xtwifi.conf:system/etc/xtwifi.conf
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/gps/gps.conf:system/etc/gps.conf \
+#    $(LOCAL_PATH)/gps/flp.conf:system/etc/flp.conf \
+#    $(LOCAL_PATH)/gps/izat.conf:system/etc/izat.conf \
+#    $(LOCAL_PATH)/gps/quipc.conf:system/etc/quipc.conf \
+#    $(LOCAL_PATH)/gps/sap.conf:system/etc/sap.conf \
+#    $(LOCAL_PATH)/gps/xtwifi.conf:system/etc/xtwifi.conf
 
 # IPv6
 PRODUCT_PACKAGES += \
